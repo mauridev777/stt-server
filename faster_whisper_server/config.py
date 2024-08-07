@@ -147,7 +147,7 @@ class Task(enum.StrEnum):
 
 
 class WhisperConfig(BaseModel):
-    model: str = Field(default="Systran/faster-whisper-medium.en")
+    model: str = Field(default="Systran/faster-whisper-large-v3")
     """
     Huggingface model to use for transcription. Note, the model must support being ran using CTranslate2.
     Models created by authors of `faster-whisper` can be found at https://huggingface.co/Systran
