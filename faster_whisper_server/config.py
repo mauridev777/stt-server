@@ -176,7 +176,7 @@ class Config(BaseSettings):
     Whether to enable the Gradio UI. You may want to disable this if you want to minimize the dependencies.
     """
 
-    default_language: Language | None = None
+    default_language: Language | None = Language.ES  # Set the default language to Spanish
     default_response_format: ResponseFormat = ResponseFormat.JSON
     whisper: WhisperConfig = WhisperConfig()
     max_models: int = 1
